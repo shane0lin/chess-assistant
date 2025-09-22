@@ -1,0 +1,1090 @@
+
+<HTML>
+<HEAD>
+<TITLE>NW Chess Online Registration System</TITLE>
+<META name="description" content="">
+<META name="keywords" content="">
+<META name="generator" content="CuteHTML">
+</HEAD>
+
+<BODY BGCOLOR="#FFFFFF" TEXT="#000000" LINK="#0000FF" VLINK="#800080">
+<font size = "6"><b>View Roster</b></font>
+<br></br>
+<font size="4">
+<font size="5">
+<b>King County Scholastic</b>
+&nbsp;&nbsp;&nbsp;&nbsp;<button  onclick="parent.location='member.php?mode=search&tournamentid=977'">Register</button>
+&nbsp;&nbsp;&nbsp;&nbsp;<button disabled="disabled" onclick="parent.location='pairings.php?pairings=true&tournamentid=977'">Standings/Pairings</button>
+&nbsp;&nbsp;&nbsp;&nbsp;<button onclick='exportRosterTableCSV()'>Export to CSV</button>
+<font size="4">
+		<table id="RosterTable" cellPadding="6" border="2">
+		<tr bgcolor=#FFFF00 <font color="#000000"><font size = "3">
+		<td>&nbsp;</td>
+		<td colspan="3" align="center">Name</td>
+		<td colspan="3" align="center">NWSRS</td>
+		<td colspan="3" align="center">USCF</td>
+		<td align="center">Regist</td>
+		<td align=center>Byes</td>
+		<td align="center">Fees</td>
+		</tr>
+		<tr bgcolor=#FFFF00 <font color="#000000"><font size = "3">
+		<td align="left">
+<form method=post style="margin-bottom:0;" name="sort" action="roster.php">
+<INPUT type="hidden" name="tournamentid" value=977>
+<INPUT type="hidden" name="mode" value=>
+<INPUT type="hidden" name="enteredpassword" value=>
+<INPUT type="hidden" name="orderby" value="Sections.SectionID,LastName,FirstName">
+<INPUT type="submit" name="Sort" value="Section">
+</form>
+		</td>
+		<td align="left">
+<form method=post style="margin-bottom:0;" name="sort" action="roster.php">
+<INPUT type="hidden" name="tournamentid" value=977>
+<INPUT type="hidden" name="mode" value=>
+<INPUT type="hidden" name="enteredpassword" value=>
+<INPUT type="hidden" name="orderby" value="LastName,FirstName">
+<INPUT type="submit" name="Sort" value="Last">
+</form>
+		</td>
+		<td>First</td>
+		<td align="left">
+<form method=post style="margin-bottom:0;" name="sort" action="roster.php">
+<INPUT type="hidden" name="tournamentid" value=977>
+<INPUT type="hidden" name="mode" value=>
+<INPUT type="hidden" name="enteredpassword" value=>
+<INPUT type="hidden" name="orderby" value="Grade">
+<INPUT type="submit" name="Sort" value="Grade">
+</form>
+		</td>
+		<td align="left">
+<form method=post style="margin-bottom:0;" name="sort" action="roster.php">
+<INPUT type="hidden" name="tournamentid" value=977>
+<INPUT type="hidden" name="mode" value=>
+<INPUT type="hidden" name="enteredpassword" value=>
+<INPUT type="hidden" name="orderby" value="School">
+<INPUT type="submit" name="Sort" value="School">
+</form>
+		</td>
+		<td align="left">
+<form method=post style="margin-bottom:0;" name="sort" action="roster.php">
+<INPUT type="hidden" name="tournamentid" value=977>
+<INPUT type="hidden" name="mode" value=>
+<INPUT type="hidden" name="enteredpassword" value=>
+<INPUT type="hidden" name="orderby" value="Sections.SectionID,NWSRSRating DESC">
+<INPUT type="submit" name="Sort" value="Rating">
+</form>
+		</td>
+		<td align="center">ID</td>
+		<td align="left">
+<form method=post style="margin-bottom:0;" name="sort" action="roster.php">
+<INPUT type="hidden" name="tournamentid" value=977>
+<INPUT type="hidden" name="mode" value=>
+<INPUT type="hidden" name="enteredpassword" value=>
+<INPUT type="hidden" name="orderby" value="Sections.SectionID,USCFPublishedRating DESC">
+<INPUT type="submit" name="Sort" value="Rating">
+</form>
+		</td>
+		<td align="center">ID</td>
+		<td align="left">
+<form method=post style="margin-bottom:0;" name="sort" action="roster.php">
+<INPUT type="hidden" name="tournamentid" value=977>
+<INPUT type="hidden" name="mode" value=>
+<INPUT type="hidden" name="enteredpassword" value=>
+<INPUT type="hidden" name="orderby" value="USCFExpDate">
+<INPUT type="submit" name="Sort" value="Expires">
+</form>
+		</td>
+		<td align="left">
+<form method=post style="margin-bottom:0;" name="sort" action="roster.php">
+<INPUT type="hidden" name="tournamentid" value=977>
+<INPUT type="hidden" name="mode" value=>
+<INPUT type="hidden" name="enteredpassword" value=>
+<INPUT type="hidden" name="orderby" value="RegistrationDate">
+<INPUT type="submit" name="Sort" value="Date">
+</form>
+		</td>
+		<td align="center">Rounds</td>
+		<td align="center">Status</td>
+		</tr>
+		<tr bgcolor=#FFFFC0 <font color="#000000"><font size = "2">
+		<td> 4-12U1000 </td>
+		<td><a href="member.php?tournamentid=977&memberid=12516&mode=listone"> Raghavan </a></td>
+		<td> Anirudh </td>
+		<td align="center"> 5 </td>
+		<td> Fernwood  ES </td>
+		<td align="right"> 652 </td>
+		<td> FRWFG42Z </td>
+		<td align="right"> 467 </td>
+		<td> 32408975 </td>
+		<td align="right"> 04/2026 </td>
+		<td align="right"> 14Jun </td>
+		<td align="center">  </td>
+		<td align="center"> Paid </td>
+		</tr>
+		<tr bgcolor=#FFFFC0 <font color="#000000"><font size = "2">
+		<td> 4-12U1000 </td>
+		<td><a href="member.php?tournamentid=977&memberid=12076&mode=listone"> Thomas </a></td>
+		<td> Tricia </td>
+		<td align="center"> 4 </td>
+		<td> Wilder   ES </td>
+		<td align="right"> 310 </td>
+		<td> WLDEH05W </td>
+		<td align="right"> 153 </td>
+		<td> 32223446 </td>
+		<td align="right"> 12/2025 </td>
+		<td align="right"> 30Jun </td>
+		<td align="center">  </td>
+		<td align="center"> Paid </td>
+		</tr>
+		<tr bgcolor=#FFFFC0 <font color="#000000"><font size = "2">
+		<td> Withdrew </td>
+		<td><a href="member.php?tournamentid=977&memberid=10636&mode=listone"> Sreraman </a></td>
+		<td> Rohit </td>
+		<td align="center"> 5 </td>
+		<td> Bellevue Children's Acad.  </td>
+		<td align="right"> 1307 </td>
+		<td> BCAFG92Q </td>
+		<td align="right"> 1120 </td>
+		<td> 31161243 </td>
+		<td align="right"> 03/2027 </td>
+		<td align="right"> 01Jul </td>
+		<td align="center">  </td>
+		<td align="right"> $-50.00 </td>
+		</tr>
+		<tr bgcolor=#FFFFC0 <font color="#000000"><font size = "2">
+		<td> Withdrew </td>
+		<td><a href="member.php?tournamentid=977&memberid=10635&mode=listone"> Sreraman </a></td>
+		<td> Rahul </td>
+		<td align="center"> 5 </td>
+		<td> Bellevue Children's Acad.  </td>
+		<td align="right"> 1116 </td>
+		<td> BCAFJ42L </td>
+		<td align="right"> 1137 </td>
+		<td> 31161208 </td>
+		<td align="right"> 03/2028 </td>
+		<td align="right"> 01Jul </td>
+		<td align="center">  </td>
+		<td align="right"> $-50.00 </td>
+		</tr>
+		<tr bgcolor=#FFFFC0 <font color="#000000"><font size = "2">
+		<td> 4-12Open </td>
+		<td><a href="member.php?tournamentid=977&memberid=8276&mode=listone"> Gagnier </a></td>
+		<td> Ian </td>
+		<td align="center"> 7 </td>
+		<td> Home Schooled-Washington  </td>
+		<td align="right"> 1528 </td>
+		<td> HSCHC72H </td>
+		<td align="right"> 1404 </td>
+		<td> 30364160 </td>
+		<td align="right"> 03/2027 </td>
+		<td align="right"> 15Jul </td>
+		<td align="center">  </td>
+		<td align="center"> Paid </td>
+		</tr>
+		<tr bgcolor=#FFFFC0 <font color="#000000"><font size = "2">
+		<td> 4-12Open </td>
+		<td><a href="member.php?tournamentid=977&memberid=7726&mode=listone"> Grandhi </a></td>
+		<td> Dhruv </td>
+		<td align="center"> 10 </td>
+		<td> Interlake   HS </td>
+		<td align="right"> 1207 </td>
+		<td> INTKC63M </td>
+		<td align="right"> 838 </td>
+		<td> 30105258 </td>
+		<td align="right"> 11/2025 </td>
+		<td align="right"> 02Aug </td>
+		<td align="center">  </td>
+		<td align="center"> Paid </td>
+		</tr>
+		<tr bgcolor=#FFFFC0 <font color="#000000"><font size = "2">
+		<td> 4-12U1000 </td>
+		<td><a href="member.php?tournamentid=977&memberid=12455&mode=listone"> Lange </a></td>
+		<td> Maximilian </td>
+		<td align="center"> 6 </td>
+		<td> Seattle Area German American   </td>
+		<td align="right"> 724 </td>
+		<td> SGAGG33Q </td>
+		<td align="right"> 0 </td>
+		<td> 30078151 </td>
+		<td align="right"> 04/2027 </td>
+		<td align="right"> 11Aug </td>
+		<td align="center">  </td>
+		<td align="center"> Paid </td>
+		</tr>
+		<tr bgcolor=#FFFFC0 <font color="#000000"><font size = "2">
+		<td> 4-12U1000 </td>
+		<td><a href="member.php?tournamentid=977&memberid=100134&mode=listone"> Lange </a></td>
+		<td> Alexander Adrian </td>
+		<td align="center"> 4 </td>
+		<td>   </td>
+		<td align="right"> 0 </td>
+		<td> 000E0 </td>
+		<td align="right"> 0 </td>
+		<td> 32532567 </td>
+		<td align="right"> 08/2027 </td>
+		<td align="right"> 12Aug </td>
+		<td align="center">  </td>
+		<td align="center"> Paid </td>
+		</tr>
+		<tr bgcolor=#FFFFC0 <font color="#000000"><font size = "2">
+		<td> K-3Open </td>
+		<td><a href="member.php?tournamentid=977&memberid=10100&mode=listone"> Hoang </a></td>
+		<td> Leonard Bach </td>
+		<td align="center"> 2 </td>
+		<td> Meridian Park  ES </td>
+		<td align="right"> 1018 </td>
+		<td> MRPCK88E </td>
+		<td align="right"> 827 </td>
+		<td> 31339051 </td>
+		<td align="right"> 07/2025 </td>
+		<td align="right"> 22Aug </td>
+		<td align="center">  </td>
+		<td align="center"> Paid </td>
+		</tr>
+		<tr bgcolor=#FFFFC0 <font color="#000000"><font size = "2">
+		<td> 4-12U1000 </td>
+		<td><a href="member.php?tournamentid=977&memberid=12514&mode=listone"> Veeramani </a></td>
+		<td> Harish </td>
+		<td align="center"> 5 </td>
+		<td> Louisa Alcott   ES </td>
+		<td align="right"> 618 </td>
+		<td> LMAFG31Z </td>
+		<td align="right"> 294 </td>
+		<td> 32463048 </td>
+		<td align="right"> 05/2027 </td>
+		<td align="right"> 26Aug </td>
+		<td align="center">  </td>
+		<td align="center"> Paid </td>
+		</tr>
+		<tr bgcolor=#FFFFC0 <font color="#000000"><font size = "2">
+		<td> 4-12Open </td>
+		<td><a href="member.php?tournamentid=977&memberid=10269&mode=listone"> Chadha </a></td>
+		<td> Saahan </td>
+		<td align="center"> 5 </td>
+		<td> Endeavour  ES </td>
+		<td align="right"> 1067 </td>
+		<td> ENDFK64R </td>
+		<td align="right"> 824 </td>
+		<td> 31354519 </td>
+		<td align="right"> 07/2027 </td>
+		<td align="right"> 26Aug </td>
+		<td align="center">  </td>
+		<td align="center"> Paid </td>
+		</tr>
+		<tr bgcolor=#FFFFC0 <font color="#000000"><font size = "2">
+		<td> K-3Open </td>
+		<td><a href="member.php?tournamentid=977&memberid=10752&mode=listone"> Khudyev </a></td>
+		<td> Elina </td>
+		<td align="center"> 3 </td>
+		<td> Open Window   </td>
+		<td align="right"> 1222 </td>
+		<td> OPWDJ97Q </td>
+		<td align="right"> 1204 </td>
+		<td> 31400593 </td>
+		<td align="right"> 08/2026 </td>
+		<td align="right"> 27Aug </td>
+		<td align="center">  </td>
+		<td align="right"> $50.00 </td>
+		</tr>
+		<tr bgcolor=#FFFFC0 <font color="#000000"><font size = "2">
+		<td> 4-12U1000 </td>
+		<td><a href="member.php?tournamentid=977&memberid=10779&mode=listone"> Hoffman </a></td>
+		<td> David </td>
+		<td align="center"> 6 </td>
+		<td> Jane Addams MS </td>
+		<td align="right"> 895 </td>
+		<td> ADDGJ98J </td>
+		<td align="right"> 581 </td>
+		<td> 31404192 </td>
+		<td align="right"> 11/2026 </td>
+		<td align="right"> 29Aug </td>
+		<td align="center">  </td>
+		<td align="center"> Paid </td>
+		</tr>
+		<tr bgcolor=#FFFFC0 <font color="#000000"><font size = "2">
+		<td> 4-12U1000 </td>
+		<td><a href="member.php?tournamentid=977&memberid=100175&mode=listone"> Sharma </a></td>
+		<td> Kabir </td>
+		<td align="center"> 7 </td>
+		<td> Chief Kanim MS </td>
+		<td align="right"> 770 </td>
+		<td> CKNHG78M </td>
+		<td align="right">  </td>
+		<td>  </td>
+		<td align="right">  </td>
+		<td align="right"> 31Aug </td>
+		<td align="center">  </td>
+		<td align="center"> Paid </td>
+		</tr>
+		<tr bgcolor=#FFFFC0 <font color="#000000"><font size = "2">
+		<td> K-3Open </td>
+		<td><a href="member.php?tournamentid=977&memberid=11854&mode=listone"> Han </a></td>
+		<td> Felix </td>
+		<td align="center"> 2 </td>
+		<td> Medina   ES </td>
+		<td align="right"> 740 </td>
+		<td> MEDCJ41U </td>
+		<td align="right"> 485 </td>
+		<td> 32144440 </td>
+		<td align="right"> 11/2026 </td>
+		<td align="right"> 01Sep </td>
+		<td align="center">  </td>
+		<td align="center"> Paid </td>
+		</tr>
+		<tr bgcolor=#FFFFC0 <font color="#000000"><font size = "2">
+		<td> K-3U800 </td>
+		<td><a href="member.php?tournamentid=977&memberid=11775&mode=listone"> Cauich-Miller </a></td>
+		<td> Marco </td>
+		<td align="center"> 3 </td>
+		<td> Cascade Parent Partnership  </td>
+		<td align="right"> 501 </td>
+		<td> CSDDJ97P </td>
+		<td align="right"> 367 </td>
+		<td> 31436075 </td>
+		<td align="right"> 09/2025 </td>
+		<td align="right"> 03Sep </td>
+		<td align="center">  </td>
+		<td align="center"> Paid </td>
+		</tr>
+		<tr bgcolor=#FFFFC0 <font color="#000000"><font size = "2">
+		<td> 4-12U1000 </td>
+		<td><a href="member.php?tournamentid=977&memberid=11435&mode=listone"> Cauich-Miller </a></td>
+		<td> Amalia </td>
+		<td align="center"> 5 </td>
+		<td> Cascade Parent Partnership  </td>
+		<td align="right"> 784 </td>
+		<td> CSDFH79V </td>
+		<td align="right"> 263 </td>
+		<td> 31438938 </td>
+		<td align="right"> 09/2025 </td>
+		<td align="right"> 03Sep </td>
+		<td align="center">  </td>
+		<td align="center"> Paid </td>
+		</tr>
+		<tr bgcolor=#FFFFC0 <font color="#000000"><font size = "2">
+		<td> K-3U800 </td>
+		<td><a href="member.php?tournamentid=977&memberid=12468&mode=listone"> Johnson </a></td>
+		<td> Elke </td>
+		<td align="center"> 3 </td>
+		<td> Home Schooled-Washington  </td>
+		<td align="right"> 695 </td>
+		<td> HSCDG73L </td>
+		<td align="right"> 136 </td>
+		<td> 32371806 </td>
+		<td align="right"> 03/2026 </td>
+		<td align="right"> 04Sep </td>
+		<td align="center">  </td>
+		<td align="right"> $50.00 </td>
+		</tr>
+		<tr bgcolor=#FFFFC0 <font color="#000000"><font size = "2">
+		<td> 4-12Open </td>
+		<td><a href="member.php?tournamentid=977&memberid=11758&mode=listone"> Dixit </a></td>
+		<td> Ved </td>
+		<td align="center"> 4 </td>
+		<td> Einstein   ES </td>
+		<td align="right"> 1007 </td>
+		<td> ENSEH63Q </td>
+		<td align="right"> 876 </td>
+		<td> 32004109 </td>
+		<td align="right"> 08/2027 </td>
+		<td align="right"> 05Sep </td>
+		<td align="center">  </td>
+		<td align="center"> Paid </td>
+		</tr>
+		<tr bgcolor=#FFFFC0 <font color="#000000"><font size = "2">
+		<td> K-3U800 </td>
+		<td><a href="member.php?tournamentid=977&memberid=10618&mode=listone"> Velichko </a></td>
+		<td> Kristina </td>
+		<td align="center"> 3 </td>
+		<td> All Saints   </td>
+		<td align="right"> 639 </td>
+		<td> ASADK07V </td>
+		<td align="right"> 376 </td>
+		<td> 31274900 </td>
+		<td align="right"> 09/2027 </td>
+		<td align="right"> 07Sep </td>
+		<td align="center">  </td>
+		<td align="center"> Paid </td>
+		</tr>
+		<tr bgcolor=#FFFFC0 <font color="#000000"><font size = "2">
+		<td> 4-12Open </td>
+		<td><a href="member.php?tournamentid=977&memberid=9866&mode=listone"> Lee </a></td>
+		<td> Justin </td>
+		<td align="center"> 9 </td>
+		<td> King's   /HS  </td>
+		<td align="right"> 1271 </td>
+		<td> KINJ732V </td>
+		<td align="right"> 1029 </td>
+		<td> 30809659 </td>
+		<td align="right"> 11/2025 </td>
+		<td align="right"> 07Sep </td>
+		<td align="center">  </td>
+		<td align="center"> Paid </td>
+		</tr>
+		<tr bgcolor=#FFFFC0 <font color="#000000"><font size = "2">
+		<td> K-3Open </td>
+		<td><a href="member.php?tournamentid=977&memberid=10767&mode=listone"> Liu </a></td>
+		<td> Kyle </td>
+		<td align="center"> 3 </td>
+		<td> Cherry Crest   </td>
+		<td align="right"> 860 </td>
+		<td> CHRDK00Z </td>
+		<td align="right"> 584 </td>
+		<td> 32144558 </td>
+		<td align="right"> 11/2025 </td>
+		<td align="right"> 08Sep </td>
+		<td align="center">  </td>
+		<td align="center"> Paid </td>
+		</tr>
+		<tr bgcolor=#FFFFC0 <font color="#000000"><font size = "2">
+		<td> 4-12U1000 </td>
+		<td><a href="member.php?tournamentid=977&memberid=100132&mode=listone"> Ginal </a></td>
+		<td> Maxwell </td>
+		<td align="center"> 6 </td>
+		<td> Thurgood Marshall  ES </td>
+		<td align="right"> 466 </td>
+		<td> THUGG23A </td>
+		<td align="right"> 247 </td>
+		<td> 32537509 </td>
+		<td align="right"> 08/2027 </td>
+		<td align="right"> 11Sep </td>
+		<td align="center">  </td>
+		<td align="center"> Paid </td>
+		</tr>
+		<tr bgcolor=#FFFFC0 <font color="#000000"><font size = "2">
+		<td> K-3U800 </td>
+		<td><a href="member.php?tournamentid=977&memberid=12345&mode=listone"> Li </a></td>
+		<td> Leo </td>
+		<td align="center"> 1 </td>
+		<td> Bellevue Children's Acad.  </td>
+		<td align="right"> 634 </td>
+		<td> BCABH11J </td>
+		<td align="right"> 563 </td>
+		<td> 32363975 </td>
+		<td align="right"> 03/2026 </td>
+		<td align="right"> 13Sep </td>
+		<td align="center">  </td>
+		<td align="center"> Paid </td>
+		</tr>
+		<tr bgcolor=#FFFFC0 <font color="#000000"><font size = "2">
+		<td> K-3U800 </td>
+		<td><a href="member.php?tournamentid=977&memberid=12543&mode=listone"> Gridasov </a></td>
+		<td> Gregory </td>
+		<td align="center"> K </td>
+		<td> Cascadia Montessori  </td>
+		<td align="right"> 288 </td>
+		<td> CSMAG36G </td>
+		<td align="right"> 103 </td>
+		<td> 32425054 </td>
+		<td align="right"> 04/2026 </td>
+		<td align="right"> 13Sep </td>
+		<td align="center">  </td>
+		<td align="center"> Paid </td>
+		</tr>
+		<tr bgcolor=#FFFFC0 <font color="#000000"><font size = "2">
+		<td> 4-12U1000 </td>
+		<td><a href="member.php?tournamentid=977&memberid=11318&mode=listone"> Gridasov </a></td>
+		<td> Robert </td>
+		<td align="center"> 4 </td>
+		<td> Lakeview  ES </td>
+		<td align="right"> 904 </td>
+		<td> LAVEJ03F </td>
+		<td align="right"> 632 </td>
+		<td> 31667152 </td>
+		<td align="right"> 05/2027 </td>
+		<td align="right"> 13Sep </td>
+		<td align="center">  </td>
+		<td align="center"> Paid </td>
+		</tr>
+		<tr bgcolor=#FFFFC0 <font color="#000000"><font size = "2">
+		<td> K-3U800 </td>
+		<td><a href="member.php?tournamentid=977&memberid=12533&mode=listone"> Zhang </a></td>
+		<td> Eli </td>
+		<td align="center"> 3 </td>
+		<td> Cherry Crest   </td>
+		<td align="right"> 697 </td>
+		<td> CHRDH69C </td>
+		<td align="right"> 361 </td>
+		<td> 32369974 </td>
+		<td align="right"> 03/2027 </td>
+		<td align="right"> 14Sep </td>
+		<td align="center">  </td>
+		<td align="center"> Paid </td>
+		</tr>
+		<tr bgcolor=#FFFFC0 <font color="#000000"><font size = "2">
+		<td> K-3U800 </td>
+		<td><a href="member.php?tournamentid=977&memberid=12453&mode=listone"> Deshpande </a></td>
+		<td> Sushant </td>
+		<td align="center"> 3 </td>
+		<td> Christa McAuliffe  </td>
+		<td align="right"> 395 </td>
+		<td> CMCDG43P </td>
+		<td align="right"> 332 </td>
+		<td> 32521229 </td>
+		<td align="right"> 07/2026 </td>
+		<td align="right"> 14Sep </td>
+		<td align="center">  </td>
+		<td align="center"> Paid </td>
+		</tr>
+		<tr bgcolor=#FFFFC0 <font color="#000000"><font size = "2">
+		<td> 4-12U1000 </td>
+		<td><a href="member.php?tournamentid=977&memberid=9881&mode=listone"> Yen </a></td>
+		<td> Apollo </td>
+		<td align="center"> 8 </td>
+		<td> Redmond MS </td>
+		<td align="right"> 741 </td>
+		<td> REJIG78H </td>
+		<td align="right"> 648 </td>
+		<td> 30820873 </td>
+		<td align="right"> 11/2026 </td>
+		<td align="right"> 14Sep </td>
+		<td align="center">  </td>
+		<td align="center"> Paid </td>
+		</tr>
+		<tr bgcolor=#FFFFC0 <font color="#000000"><font size = "2">
+		<td> 4-12Open </td>
+		<td><a href="member.php?tournamentid=977&memberid=8099&mode=listone"> Choi </a></td>
+		<td> Hunter </td>
+		<td align="center"> 7 </td>
+		<td> Univ. Prep. Academy  </td>
+		<td align="right"> 1328 </td>
+		<td> UPAHE80A </td>
+		<td align="right"> 1089 </td>
+		<td> 30058814 </td>
+		<td align="right"> 07/2025 </td>
+		<td align="right"> 14Sep </td>
+		<td align="center">  </td>
+		<td align="center"> Paid </td>
+		</tr>
+		<tr bgcolor=#FFFFC0 <font color="#000000"><font size = "2">
+		<td> 4-12U1000 </td>
+		<td><a href="member.php?tournamentid=977&memberid=11396&mode=listone"> Gowtham </a></td>
+		<td> Arav </td>
+		<td align="center"> 6 </td>
+		<td> Timberline MS </td>
+		<td align="right"> 609 </td>
+		<td> TMBGH89D </td>
+		<td align="right">  </td>
+		<td>  </td>
+		<td align="right">  </td>
+		<td align="right"> 15Sep </td>
+		<td align="center">  </td>
+		<td align="right"> $95.00 </td>
+		</tr>
+		<tr bgcolor=#FFFFC0 <font color="#000000"><font size = "2">
+		<td> 4-12U1000 </td>
+		<td><a href="member.php?tournamentid=977&memberid=100083&mode=listone"> Joseph </a></td>
+		<td> George Kochumuriyil </td>
+		<td align="center"> 4 </td>
+		<td> Cedar Trails ES </td>
+		<td align="right"> 933 </td>
+		<td> CDIEH11C </td>
+		<td align="right">  </td>
+		<td>  </td>
+		<td align="right">  </td>
+		<td align="right"> 15Sep </td>
+		<td align="center">  </td>
+		<td align="center"> Paid </td>
+		</tr>
+		<tr bgcolor=#FFFFC0 <font color="#000000"><font size = "2">
+		<td> K-3Open </td>
+		<td><a href="member.php?tournamentid=977&memberid=11736&mode=listone"> Yin </a></td>
+		<td> Nolan </td>
+		<td align="center"> 2 </td>
+		<td> Somerset   ES </td>
+		<td align="right"> 924 </td>
+		<td> SOMCH64W </td>
+		<td align="right"> 660 </td>
+		<td> 32000809 </td>
+		<td align="right"> 08/2026 </td>
+		<td align="right"> 15Sep </td>
+		<td align="center">  </td>
+		<td align="right"> $50.00 </td>
+		</tr>
+		<tr bgcolor=#FFFFC0 <font color="#000000"><font size = "2">
+		<td> 4-12U1000 </td>
+		<td><a href="member.php?tournamentid=977&memberid=10823&mode=listone"> Besati </a></td>
+		<td> Arnav </td>
+		<td align="center"> 4 </td>
+		<td> Rockwell   ES </td>
+		<td align="right"> 650 </td>
+		<td> RKWEJ74G </td>
+		<td align="right"> 151 </td>
+		<td> 31992089 </td>
+		<td align="right"> 08/2025 </td>
+		<td align="right"> 15Sep </td>
+		<td align="center">  </td>
+		<td align="right"> $95.00 </td>
+		</tr>
+		<tr bgcolor=#FFFFC0 <font color="#000000"><font size = "2">
+		<td> 4-12U1000 </td>
+		<td><a href="member.php?tournamentid=977&memberid=10837&mode=listone"> Li </a></td>
+		<td> Alice </td>
+		<td align="center"> 3 </td>
+		<td> Open Window   </td>
+		<td align="right"> 963 </td>
+		<td> OPWDJ98C </td>
+		<td align="right"> 728 </td>
+		<td> 31659388 </td>
+		<td align="right"> 01/2026 </td>
+		<td align="right"> 15Sep </td>
+		<td align="center">  </td>
+		<td align="center"> Paid </td>
+		</tr>
+		<tr bgcolor=#FFFFC0 <font color="#000000"><font size = "2">
+		<td> K-3U800 </td>
+		<td><a href="member.php?tournamentid=977&memberid=100216&mode=listone"> Jiang </a></td>
+		<td> Ethan </td>
+		<td align="center"> 1 </td>
+		<td> Bellevue Children's Acad.  </td>
+		<td align="right"> 389 </td>
+		<td> BCABG19W </td>
+		<td align="right"> 0 </td>
+		<td> 32557461 </td>
+		<td align="right"> 09/2026 </td>
+		<td align="right"> 16Sep </td>
+		<td align="center">  </td>
+		<td align="center"> Paid </td>
+		</tr>
+		<tr bgcolor=#FFFFC0 <font color="#000000"><font size = "2">
+		<td> 4-12Open </td>
+		<td><a href="member.php?tournamentid=977&memberid=8877&mode=listone"> Black </a></td>
+		<td> Stas </td>
+		<td align="center"> 6 </td>
+		<td> Willows Prep.  </td>
+		<td align="right"> 1162 </td>
+		<td> WPPG368F </td>
+		<td align="right"> 878 </td>
+		<td> 30431297 </td>
+		<td align="right"> 01/2026 </td>
+		<td align="right"> 16Sep </td>
+		<td align="center">  </td>
+		<td align="center"> Paid </td>
+		</tr>
+		<tr bgcolor=#FFFFC0 <font color="#000000"><font size = "2">
+		<td> 4-12U1000 </td>
+		<td><a href="member.php?tournamentid=977&memberid=10540&mode=listone"> Mcintyre </a></td>
+		<td> Isaac </td>
+		<td align="center"> 6 </td>
+		<td> Willows Prep.  </td>
+		<td align="right"> 855 </td>
+		<td> WPPG466S </td>
+		<td align="right"> 896 </td>
+		<td> 32369648 </td>
+		<td align="right"> 03/2026 </td>
+		<td align="right"> 17Sep </td>
+		<td align="center">  </td>
+		<td align="center"> Paid </td>
+		</tr>
+		<tr bgcolor=#FFFFC0 <font color="#000000"><font size = "2">
+		<td> 4-12Open </td>
+		<td><a href="member.php?tournamentid=977&memberid=12180&mode=listone"> Fredette </a></td>
+		<td> Blaise </td>
+		<td align="center"> 7 </td>
+		<td> Bellingham Christian  </td>
+		<td align="right"> 1235 </td>
+		<td> BECHH95C </td>
+		<td align="right"> 869 </td>
+		<td> 32080828 </td>
+		<td align="right"> 10/2026 </td>
+		<td align="right"> 17Sep </td>
+		<td align="center">  </td>
+		<td align="right"> $50.00 </td>
+		</tr>
+		<tr bgcolor=#FFFFC0 <font color="#000000"><font size = "2">
+		<td> K-3U800 </td>
+		<td><a href="member.php?tournamentid=977&memberid=10292&mode=listone"> Yang </a></td>
+		<td> Claude </td>
+		<td align="center"> 2 </td>
+		<td> Seattle Country Day  </td>
+		<td align="right"> 133 </td>
+		<td> SCDCK65F </td>
+		<td align="right"> 239 </td>
+		<td> 31940324 </td>
+		<td align="right"> 06/2026 </td>
+		<td align="right"> 18Sep </td>
+		<td align="center">  </td>
+		<td align="center"> Paid </td>
+		</tr>
+		<tr bgcolor=#FFFFC0 <font color="#000000"><font size = "2">
+		<td> 4-12U1000 </td>
+		<td><a href="member.php?tournamentid=977&memberid=11770&mode=listone"> Nishino </a></td>
+		<td> Anne </td>
+		<td align="center"> 4 </td>
+		<td> Bellevue Children's Acad.  </td>
+		<td align="right"> 732 </td>
+		<td> BCAEH74F </td>
+		<td align="right"> 467 </td>
+		<td> 32018786 </td>
+		<td align="right"> 09/2025 </td>
+		<td align="right"> 18Sep </td>
+		<td align="center">  </td>
+		<td align="right"> $50.00 </td>
+		</tr>
+		<tr bgcolor=#FFFFC0 <font color="#000000"><font size = "2">
+		<td> K-3U800 </td>
+		<td><a href="member.php?tournamentid=977&memberid=100113&mode=listone"> Ginotra </a></td>
+		<td> Sohum </td>
+		<td align="center"> 3 </td>
+		<td> Grand Ridge  ES </td>
+		<td align="right"> 756 </td>
+		<td> GRRDG19C </td>
+		<td align="right"> 0 </td>
+		<td> 32466618 </td>
+		<td align="right"> 05/2026 </td>
+		<td align="right"> 18Sep </td>
+		<td align="center">  </td>
+		<td align="right"> $50.00 </td>
+		</tr>
+		<tr bgcolor=#FFFFC0 <font color="#000000"><font size = "2">
+		<td> 4-12Open </td>
+		<td><a href="member.php?tournamentid=977&memberid=12215&mode=listone"> Rish-Brown </a></td>
+		<td> Jacob </td>
+		<td align="center"> 6 </td>
+		<td> Harbor Ridge   MS </td>
+		<td align="right"> 1136 </td>
+		<td> HABGK61J </td>
+		<td align="right"> 1152 </td>
+		<td> 32240018 </td>
+		<td align="right"> 01/2026 </td>
+		<td align="right"> 19Sep </td>
+		<td align="center">  </td>
+		<td align="center"> Paid </td>
+		</tr>
+		<tr bgcolor=#FFFFC0 <font color="#000000"><font size = "2">
+		<td> Withdrew </td>
+		<td><a href="member.php?tournamentid=977&memberid=10497&mode=listone"> He </a></td>
+		<td> Jizhou </td>
+		<td align="center"> 4 </td>
+		<td> Medina   ES </td>
+		<td align="right"> 1264 </td>
+		<td> MEDE789B </td>
+		<td align="right"> 1196 </td>
+		<td> 31414231 </td>
+		<td align="right"> 09/2027 </td>
+		<td align="right"> 19Sep </td>
+		<td align="center">  </td>
+		<td align="right"> $-50.00 </td>
+		</tr>
+		<tr bgcolor=#FFFFC0 <font color="#000000"><font size = "2">
+		<td> 4-12U1000 </td>
+		<td><a href="member.php?tournamentid=977&memberid=12479&mode=listone"> Lee </a></td>
+		<td> Aiden </td>
+		<td align="center"> 6 </td>
+		<td> Gateway MS </td>
+		<td align="right"> 455 </td>
+		<td> GTMGJ44G </td>
+		<td align="right"> 101 </td>
+		<td> 32538514 </td>
+		<td align="right"> 08/2026 </td>
+		<td align="right"> 19Sep </td>
+		<td align="center">  </td>
+		<td align="center"> Paid </td>
+		</tr>
+		<tr bgcolor=#FFFFC0 <font color="#000000"><font size = "2">
+		<td> 4-12Open </td>
+		<td><a href="member.php?tournamentid=977&memberid=12216&mode=listone"> Rish-Brown </a></td>
+		<td> Jackson </td>
+		<td align="center"> 6 </td>
+		<td> Harbor Ridge   MS </td>
+		<td align="right"> 1223 </td>
+		<td> HABGH57T </td>
+		<td align="right"> 1054 </td>
+		<td> 32240067 </td>
+		<td align="right"> 01/2026 </td>
+		<td align="right"> 19Sep </td>
+		<td align="center">  </td>
+		<td align="center"> Paid </td>
+		</tr>
+		<tr bgcolor=#FFFFC0 <font color="#000000"><font size = "2">
+		<td> 4-12U1000 </td>
+		<td><a href="member.php?tournamentid=977&memberid=100222&mode=listone"> Thati </a></td>
+		<td> Rutvik Reddy </td>
+		<td align="center"> 5 </td>
+		<td> Rockwell   ES </td>
+		<td align="right"> 0 </td>
+		<td> RKWF0 </td>
+		<td align="right">  </td>
+		<td> 32578350 </td>
+		<td align="right">  </td>
+		<td align="right"> 20Sep </td>
+		<td align="center">  </td>
+		<td align="right"> $50.00 </td>
+		</tr>
+		<tr bgcolor=#FFFFC0 <font color="#000000"><font size = "2">
+		<td> 4-12Open </td>
+		<td><a href="member.php?tournamentid=977&memberid=9885&mode=listone"> Huang </a></td>
+		<td> Edwin </td>
+		<td align="center"> 8 </td>
+		<td> Odle   MS </td>
+		<td align="right"> 1152 </td>
+		<td> OMSI616M </td>
+		<td align="right"> 1069 </td>
+		<td> 30952671 </td>
+		<td align="right"> 01/2026 </td>
+		<td align="right"> 20Sep </td>
+		<td align="center">  </td>
+		<td align="center"> Paid </td>
+		</tr>
+		<tr bgcolor=#FFFFC0 <font color="#000000"><font size = "2">
+		<td> 4-12U1000 </td>
+		<td><a href="member.php?tournamentid=977&memberid=9238&mode=listone"> Li </a></td>
+		<td> Rebecca </td>
+		<td align="center"> 4 </td>
+		<td> Seattle Country Day  </td>
+		<td align="right"> 854 </td>
+		<td> SCDEJ62B </td>
+		<td align="right"> 827 </td>
+		<td> 30492480 </td>
+		<td align="right"> 06/2027 </td>
+		<td align="right"> 20Sep </td>
+		<td align="center">  </td>
+		<td align="center"> Paid </td>
+		</tr>
+		<tr bgcolor=#FFFFC0 <font color="#000000"><font size = "2">
+		<td> 4-12U1000 </td>
+		<td><a href="member.php?tournamentid=977&memberid=100198&mode=listone"> Ande </a></td>
+		<td> Akshaj </td>
+		<td align="center"> 5 </td>
+		<td> Ruby Bridges ES </td>
+		<td align="right"> 0 </td>
+		<td> RBRF0 </td>
+		<td align="right">  </td>
+		<td> 32569239 </td>
+		<td align="right"> 09/2026 </td>
+		<td align="right"> 20Sep </td>
+		<td align="center">  </td>
+		<td align="center"> Paid </td>
+		</tr>
+		<tr bgcolor=#FFFFC0 <font color="#000000"><font size = "2">
+		<td> K-3U800 </td>
+		<td><a href="member.php?tournamentid=977&memberid=100204&mode=listone"> Ande </a></td>
+		<td> Shayanth </td>
+		<td align="center"> 1 </td>
+		<td> Ruby Bridges ES </td>
+		<td align="right"> 0 </td>
+		<td> RBRB0 </td>
+		<td align="right">  </td>
+		<td>  </td>
+		<td align="right">  </td>
+		<td align="right"> 20Sep </td>
+		<td align="center">  </td>
+		<td align="center"> Paid </td>
+		</tr>
+		<tr bgcolor=#FFFFC0 <font color="#000000"><font size = "2">
+		<td> 4-12Open </td>
+		<td><a href="member.php?tournamentid=977&memberid=10064&mode=listone"> Qu </a></td>
+		<td> Yuwen </td>
+		<td align="center"> 3 </td>
+		<td> Rosa Parks  ES </td>
+		<td align="right"> 1020 </td>
+		<td> RSADK86G </td>
+		<td align="right"> 788 </td>
+		<td> 30961603 </td>
+		<td align="right"> 01/2026 </td>
+		<td align="right"> 20Sep </td>
+		<td align="center">  </td>
+		<td align="right"> $50.00 </td>
+		</tr>
+		<tr bgcolor=#FFFFC0 <font color="#000000"><font size = "2">
+		<td> 4-12U1000 </td>
+		<td><a href="member.php?tournamentid=977&memberid=11037&mode=listone"> Le </a></td>
+		<td> An </td>
+		<td align="center"> 5 </td>
+		<td> Maple Hill  ES </td>
+		<td align="right"> 799 </td>
+		<td> MHEFJ73S </td>
+		<td align="right"> 298 </td>
+		<td> 31568628 </td>
+		<td align="right"> 01/2026 </td>
+		<td align="right"> 20Sep </td>
+		<td align="center">  </td>
+		<td align="center"> Paid </td>
+		</tr>
+		<tr bgcolor=#FFFFC0 <font color="#000000"><font size = "2">
+		<td> K-3U800 </td>
+		<td><a href="member.php?tournamentid=977&memberid=11240&mode=listone"> Premjith </a></td>
+		<td> Arnav </td>
+		<td align="center"> 2 </td>
+		<td> Forest View ES </td>
+		<td align="right"> 630 </td>
+		<td> FRVCJ20D </td>
+		<td align="right"> 400 </td>
+		<td> 31742528 </td>
+		<td align="right"> 02/2026 </td>
+		<td align="right"> 20Sep </td>
+		<td align="center">  </td>
+		<td align="center"> Paid </td>
+		</tr>
+		<tr bgcolor=#FFFFC0 <font color="#000000"><font size = "2">
+		<td> 4-12U1000 </td>
+		<td><a href="member.php?tournamentid=977&memberid=11375&mode=listone"> Meka </a></td>
+		<td> Suhaas </td>
+		<td align="center"> 7 </td>
+		<td> NOVA MS </td>
+		<td align="right"> 987 </td>
+		<td> NOVHJ51J </td>
+		<td align="right"> 663 </td>
+		<td> 31809848 </td>
+		<td align="right"> 03/2029 </td>
+		<td align="right"> 20Sep </td>
+		<td align="center">  </td>
+		<td align="center"> Paid </td>
+		</tr>
+		<tr bgcolor=#FFFFC0 <font color="#000000"><font size = "2">
+		<td> K-3Open </td>
+		<td><a href="member.php?tournamentid=977&memberid=10239&mode=listone"> Wong </a></td>
+		<td> Claire </td>
+		<td align="center"> 3 </td>
+		<td> Bellevue Children's Acad.  </td>
+		<td align="right"> 933 </td>
+		<td> BCADK86D </td>
+		<td align="right"> 656 </td>
+		<td> 31371059 </td>
+		<td align="right"> 09/2027 </td>
+		<td align="right"> 21Sep </td>
+		<td align="center">  </td>
+		<td align="center"> Paid </td>
+		</tr>
+		<tr bgcolor=#FFFFC0 <font color="#000000"><font size = "2">
+		<td> K-3U800 </td>
+		<td><a href="member.php?tournamentid=977&memberid=100057&mode=listone"> Cheng </a></td>
+		<td> Ary </td>
+		<td align="center"> 1 </td>
+		<td> School Unknown  </td>
+		<td align="right"> 582 </td>
+		<td> XXXBG24S </td>
+		<td align="right"> 542 </td>
+		<td> 31430870 </td>
+		<td align="right"> 11/2026 </td>
+		<td align="right"> 21Sep </td>
+		<td align="center">  </td>
+		<td align="right"> $50.00 </td>
+		</tr>
+		<tr bgcolor=#FFFFC0 <font color="#000000"><font size = "2">
+		<td> 4-12Open </td>
+		<td><a href="member.php?tournamentid=977&memberid=9997&mode=listone"> Deshpande </a></td>
+		<td> Keshav </td>
+		<td align="center"> 7 </td>
+		<td> Chinook   MS </td>
+		<td align="right"> 1385 </td>
+		<td> CHOH420G </td>
+		<td align="right"> 798 </td>
+		<td> 30933441 </td>
+		<td align="right"> 02/2026 </td>
+		<td align="right"> 21Sep </td>
+		<td align="center">  </td>
+		<td align="center"> Paid </td>
+		</tr>
+		<tr bgcolor=#FFFFC0 <font color="#000000"><font size = "2">
+		<td> K-3Open </td>
+		<td><a href="member.php?tournamentid=977&memberid=10893&mode=listone"> Ahsant </a></td>
+		<td> Nickrad </td>
+		<td align="center"> 3 </td>
+		<td> Wellington   ES </td>
+		<td align="right"> 965 </td>
+		<td> WELDJ56K </td>
+		<td align="right"> 828 </td>
+		<td> 32146138 </td>
+		<td align="right"> 11/2027 </td>
+		<td align="right"> 21Sep </td>
+		<td align="center">  </td>
+		<td align="right"> $50.00 </td>
+		</tr>
+		<tr bgcolor=#FFFFC0 <font color="#000000"><font size = "2">
+		<td> K-3Open </td>
+		<td><a href="member.php?tournamentid=977&memberid=11256&mode=listone"> Liu </a></td>
+		<td> Louis </td>
+		<td align="center"> 3 </td>
+		<td> Chestnut Hill Academy ES </td>
+		<td align="right"> 900 </td>
+		<td> CNHDJ75J </td>
+		<td align="right"> 529 </td>
+		<td> 31992152 </td>
+		<td align="right"> 08/2025 </td>
+		<td align="right"> 21Sep </td>
+		<td align="center">  </td>
+		<td align="center"> Paid </td>
+		</tr>
+		<tr bgcolor=#FFFFC0 <font color="#000000"><font size = "2">
+		<td> 4-12Open </td>
+		<td><a href="member.php?tournamentid=977&memberid=11263&mode=listone"> Tsay </a></td>
+		<td> Elon </td>
+		<td align="center"> 5 </td>
+		<td> Lakeridge   ES </td>
+		<td align="right"> 1239 </td>
+		<td> LKDFK07B </td>
+		<td align="right"> 965 </td>
+		<td> 31428571 </td>
+		<td align="right"> 09/2027 </td>
+		<td align="right"> 21Sep </td>
+		<td align="center">  </td>
+		<td align="center"> Paid </td>
+		</tr>
+		<tr bgcolor=#FFFFC0 <font color="#000000"><font size = "2">
+		<td> K-3U800 </td>
+		<td><a href="member.php?tournamentid=977&memberid=11566&mode=listone"> Niu </a></td>
+		<td> Edwin </td>
+		<td align="center"> 1 </td>
+		<td> Somerset   ES </td>
+		<td align="right"> 603 </td>
+		<td> SOMBH73D </td>
+		<td align="right"> 363 </td>
+		<td> 31992242 </td>
+		<td align="right"> 08/2026 </td>
+		<td align="right"> 21Sep </td>
+		<td align="center">  </td>
+		<td align="right"> $50.00 </td>
+		</tr>
+		<tr bgcolor=#FFFFC0 <font color="#000000"><font size = "2">
+		<td> K-3U800 </td>
+		<td><a href="member.php?tournamentid=977&memberid=11867&mode=listone"> Hu </a></td>
+		<td> Ethan </td>
+		<td align="center"> 2 </td>
+		<td> Chestnut Hill Academy ES </td>
+		<td align="right"> 603 </td>
+		<td> CNHCH35U </td>
+		<td align="right"> 603 </td>
+		<td> 32106732 </td>
+		<td align="right"> 10/2026 </td>
+		<td align="right"> 22Sep </td>
+		<td align="center">  </td>
+		<td align="right"> $60.00 </td>
+		</tr>
+		</td></tr>
+		</font></table>
+<font size="3">
+Total players registered: <b>60</b>.&nbsp;&nbsp Room for <b>80</b> players maximum.
+</font>
+<font size="4">
+<br><br><a href="index.php">View tournament list</a><br><br>
+<a href="password.php?tournamentid=977&mode=director">For Tournament Directors Only</a><br><br>
+</font>
+</font>
+ 
+</BODY>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<script>
+	function exportRosterTableCSV() {
+		var table = document.getElementById("RosterTable");
+		var rows = table.querySelectorAll("tr");
+		var csv = [];
+		for (var i = 0; i < rows.length; i++) {
+			var row = [], cols = rows[i].querySelectorAll("td,th");
+			for (var j = 0; j < cols.length; j++) {
+				var text = cols[j].innerText.replace(/"/g, "\"\"");
+				row.push("\"" + text + "\"");
+			}
+			csv.push(row.join(","));
+		}
+		var csvString = csv.join("\n");
+		var blob = new Blob([csvString], { type: "text/csv" });
+		var link = document.createElement("a");
+		link.href = URL.createObjectURL(blob);
+		link.download = "RosterTable.csv";
+		document.body.appendChild(link);
+		link.click();
+		document.body.removeChild(link);
+	}
+</script>
+</HTML>
