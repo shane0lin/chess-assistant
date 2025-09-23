@@ -1,0 +1,30 @@
+# Python bytecode and build artifacts
+__pycache__/
+*.py[cod]
+*.so
+*.egg-info/
+*.dist-info/
+build/
+dist/
+coverage.xml
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+
+# Test and coverage outputs
+.pytest_cache/
+.coverage
+htmlcov/
+
+# IDE/editor metadata
+.idea/
+.vscode/
+*.code-workspace
+
+# macOS file cruft
+.DS_Store
+
+# Project-generated assets
+resources/chessassistant.db
