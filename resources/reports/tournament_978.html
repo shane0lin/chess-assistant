@@ -1,0 +1,1183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tournament 978 Roster</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+            user-select: none;
+            position: relative;
+        }
+        th:hover {
+            background-color: #45a049;
+        }
+        th.sorted-asc::after {
+            content: " ↑";
+            position: absolute;
+            right: 8px;
+        }
+        th.sorted-desc::after {
+            content: " ↓";
+            position: absolute;
+            right: 8px;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        tr:hover {
+            background-color: #e8f5e8;
+        }
+        .stats {
+            background-color: #f0f0f0;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Tournament 978 Roster</h1>
+
+        <div class="stats">
+            <strong>Total Players:</strong> 129 |
+            <strong>Generated:</strong> <span id="timestamp"></span>
+        </div>
+
+        <table id="rosterTable">
+            <thead>
+                <tr>
+                    <th onclick="sortTable(0)">Player Name</th>
+                    <th onclick="sortTable(1)">Section</th>
+                    <th onclick="sortTable(2)">USCF Rating</th>
+                    <th onclick="sortTable(3)">NWSRS Rating</th>
+                    <th onclick="sortTable(4)">USCF ID</th>
+                    <th onclick="sortTable(5)">NWSRS ID</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+        <tr>
+            <td>Elliot Golan</td>
+            <td>Withdrew</td>
+            <td data-sort="863">863</td>
+            <td data-sort="955">955</td>
+            <td>32089228</td>
+            <td>ADUNH58X</td>
+        </tr>
+        <tr>
+            <td>Ryan W Porter</td>
+            <td>Kenmore Open</td>
+            <td data-sort="2287">2287</td>
+            <td data-sort="2287">2287</td>
+            <td>12493763</td>
+            <td>ADUNF05C</td>
+        </tr>
+        <tr>
+            <td>Rafael Palathingal</td>
+            <td>Kenmore Open</td>
+            <td data-sort="2132">2132</td>
+            <td data-sort="2111">2111</td>
+            <td>30810765</td>
+            <td>KKNG196R</td>
+        </tr>
+        <tr>
+            <td>Lewis Ma</td>
+            <td>Kenmore Open</td>
+            <td data-sort="1529">1529</td>
+            <td data-sort="1531">1531</td>
+            <td>31123278</td>
+            <td>SOME587M</td>
+        </tr>
+        <tr>
+            <td>Varshith Reddy Avula</td>
+            <td>Kent U1500</td>
+            <td data-sort="1175">1175</td>
+            <td data-sort="1337">1337</td>
+            <td>16906687</td>
+            <td>RHJJ110R</td>
+        </tr>
+        <tr>
+            <td>Vidur Ganesan</td>
+            <td>Withdrew</td>
+            <td data-sort="1605">1605</td>
+            <td data-sort="1689">1689</td>
+            <td>30882723</td>
+            <td>SKWG940K</td>
+        </tr>
+        <tr>
+            <td>Rahul Sreraman</td>
+            <td>Kent U1500</td>
+            <td data-sort="1137">1137</td>
+            <td data-sort="1116">1116</td>
+            <td>31161208</td>
+            <td>BCAFJ42L</td>
+        </tr>
+        <tr>
+            <td>Rohit Sreraman</td>
+            <td>Kent U1500</td>
+            <td data-sort="1120">1120</td>
+            <td data-sort="1307">1307</td>
+            <td>31161243</td>
+            <td>BCAFG92Q</td>
+        </tr>
+        <tr>
+            <td>Leonardo Wang</td>
+            <td>Kenmore Open</td>
+            <td data-sort="1912">1912</td>
+            <td data-sort="1943">1943</td>
+            <td>16895190</td>
+            <td>MTSJ233K</td>
+        </tr>
+        <tr>
+            <td>Mark Smith</td>
+            <td>Withdrew</td>
+            <td data-sort="1400">1400</td>
+            <td data-sort="0">-</td>
+            <td>12625397</td>
+            <td>ADUN0</td>
+        </tr>
+        <tr>
+            <td>Yuvan Oruganti</td>
+            <td>Kent U1500</td>
+            <td data-sort="862">862</td>
+            <td data-sort="988">988</td>
+            <td>32140284</td>
+            <td>HGMIJ55U</td>
+        </tr>
+        <tr>
+            <td>Patrick Zhang</td>
+            <td>Kent U1500</td>
+            <td data-sort="1157">1157</td>
+            <td data-sort="1417">1417</td>
+            <td>31937492</td>
+            <td>CDIDK01J</td>
+        </tr>
+        <tr>
+            <td>Anay Khandelwal</td>
+            <td>Kent U1500</td>
+            <td data-sort="750">750</td>
+            <td data-sort="945">945</td>
+            <td>32258335</td>
+            <td>OMSIA10L</td>
+        </tr>
+        <tr>
+            <td>Andrew Inforzato</td>
+            <td>Kent U1500</td>
+            <td data-sort="1306">1306</td>
+            <td data-sort="1499">1499</td>
+            <td>32382660</td>
+            <td>HABJH09C</td>
+        </tr>
+        <tr>
+            <td>Tejas Mulye</td>
+            <td>Kenmore Open</td>
+            <td data-sort="1560">1560</td>
+            <td data-sort="1580">1580</td>
+            <td>12802384</td>
+            <td>ADUNH35D</td>
+        </tr>
+        <tr>
+            <td>John Patrick Christy</td>
+            <td>Kenmore Open</td>
+            <td data-sort="1507">1507</td>
+            <td data-sort="1507">1507</td>
+            <td>12561334</td>
+            <td>ADUN853W</td>
+        </tr>
+        <tr>
+            <td>Odbayar Yondon</td>
+            <td>Kenmore Open</td>
+            <td data-sort="1914">1914</td>
+            <td data-sort="1921">1921</td>
+            <td>30245517</td>
+            <td>INGHK97T</td>
+        </tr>
+        <tr>
+            <td>Johnny James</td>
+            <td>Withdrew</td>
+            <td data-sort="1478">1478</td>
+            <td data-sort="1478">1478</td>
+            <td>17137481</td>
+            <td>ADUNH59B</td>
+        </tr>
+        <tr>
+            <td>Andy Chen</td>
+            <td>Kenmore Open</td>
+            <td data-sort="1532">1532</td>
+            <td data-sort="1669">1669</td>
+            <td>30080996</td>
+            <td>SOMFK05J</td>
+        </tr>
+        <tr>
+            <td>Guru Harshith Reddy Avula</td>
+            <td>Kent U1500</td>
+            <td data-sort="1296">1296</td>
+            <td data-sort="1388">1388</td>
+            <td>30153778</td>
+            <td>BRHG633Y</td>
+        </tr>
+        <tr>
+            <td>Jason Loving</td>
+            <td>Kenmore Open</td>
+            <td data-sort="2037">2037</td>
+            <td data-sort="0">-</td>
+            <td>12875227</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td>Rushil Singh</td>
+            <td>Withdrew</td>
+            <td data-sort="1364">1364</td>
+            <td data-sort="1446">1446</td>
+            <td>30059185</td>
+            <td>TWFIB52N</td>
+        </tr>
+        <tr>
+            <td>Ted Wang</td>
+            <td>Kenmore Open</td>
+            <td data-sort="2313">2313</td>
+            <td data-sort="2307">2307</td>
+            <td>17187840</td>
+            <td>OVLGK13D</td>
+        </tr>
+        <tr>
+            <td>Aziz Degenbaev</td>
+            <td>Kenmore Open</td>
+            <td data-sort="2399">2399</td>
+            <td data-sort="2408">2408</td>
+            <td>31649245</td>
+            <td>ADUNJ12D</td>
+        </tr>
+        <tr>
+            <td>Leo Saloranta</td>
+            <td>Kent U1500</td>
+            <td data-sort="1173">1173</td>
+            <td data-sort="1425">1425</td>
+            <td>17348094</td>
+            <td>MCRMB40A</td>
+        </tr>
+        <tr>
+            <td>Skandha Raj</td>
+            <td>Kenmore Open</td>
+            <td data-sort="1414">1414</td>
+            <td data-sort="1449">1449</td>
+            <td>31293417</td>
+            <td>EVGDK55U</td>
+        </tr>
+        <tr>
+            <td>Tom Zeitlin</td>
+            <td>Kent U1500</td>
+            <td data-sort="898">898</td>
+            <td data-sort="1118">1118</td>
+            <td>32134040</td>
+            <td>WOBGI56H</td>
+        </tr>
+        <tr>
+            <td>Shane Groff</td>
+            <td>Kent U1500</td>
+            <td data-sort="927">927</td>
+            <td data-sort="1006">1006</td>
+            <td>12521331</td>
+            <td>ADUNG28W</td>
+        </tr>
+        <tr>
+            <td>Brent Baxter</td>
+            <td>Kenmore Open</td>
+            <td data-sort="1851">1851</td>
+            <td data-sort="1881">1881</td>
+            <td>12559633</td>
+            <td>ADUN647A</td>
+        </tr>
+        <tr>
+            <td>Isaac Vega</td>
+            <td>Kenmore Open</td>
+            <td data-sort="1889">1889</td>
+            <td data-sort="1892">1892</td>
+            <td>14490451</td>
+            <td>ADONW943</td>
+        </tr>
+        <tr>
+            <td>Chen Yuan</td>
+            <td>Withdrew</td>
+            <td data-sort="1549">1549</td>
+            <td data-sort="1714">1714</td>
+            <td>30472319</td>
+            <td>ETSEJ15Z</td>
+        </tr>
+        <tr>
+            <td>Nihanth Tatikonda</td>
+            <td>Withdrew</td>
+            <td data-sort="1598">1598</td>
+            <td data-sort="1642">1642</td>
+            <td>16818044</td>
+            <td>BOTL926F</td>
+        </tr>
+        <tr>
+            <td>Oliver He</td>
+            <td>Kenmore Open</td>
+            <td data-sort="1470">1470</td>
+            <td data-sort="1549">1549</td>
+            <td>31567870</td>
+            <td>ENDFK71V</td>
+        </tr>
+        <tr>
+            <td>Julian Tang</td>
+            <td>Kent U1500</td>
+            <td data-sort="0">-</td>
+            <td data-sort="400">400</td>
+            <td>32537783</td>
+            <td>000NZ395</td>
+        </tr>
+        <tr>
+            <td>Addison Dahlke</td>
+            <td>Kent U1500</td>
+            <td data-sort="1335">1335</td>
+            <td data-sort="0">-</td>
+            <td>30276136</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td>Aahan Sriram</td>
+            <td>Kenmore Open</td>
+            <td data-sort="1407">1407</td>
+            <td data-sort="1474">1474</td>
+            <td>30739934</td>
+            <td>OVLGC03K</td>
+        </tr>
+        <tr>
+            <td>Arihant Chaudhuri</td>
+            <td>Kent U1500</td>
+            <td data-sort="1270">1270</td>
+            <td data-sort="1338">1338</td>
+            <td>30562969</td>
+            <td>CHAG703E</td>
+        </tr>
+        <tr>
+            <td>Imai Maharaja</td>
+            <td>Kenmore Open</td>
+            <td data-sort="1516">1516</td>
+            <td data-sort="1615">1615</td>
+            <td>31168041</td>
+            <td>HMNFK34K</td>
+        </tr>
+        <tr>
+            <td>Jinmo Nam</td>
+            <td>Kenmore Open</td>
+            <td data-sort="1703">1703</td>
+            <td data-sort="1724">1724</td>
+            <td>17005836</td>
+            <td>GRRLC101</td>
+        </tr>
+        <tr>
+            <td>Kyle Boddy</td>
+            <td>Kent U1500</td>
+            <td data-sort="1301">1301</td>
+            <td data-sort="1408">1408</td>
+            <td>30470369</td>
+            <td>ADUNH98N</td>
+        </tr>
+        <tr>
+            <td>Alex Ye</td>
+            <td>Kent U1500</td>
+            <td data-sort="1013">1013</td>
+            <td data-sort="1334">1334</td>
+            <td>30756956</td>
+            <td>PLKGH51L</td>
+        </tr>
+        <tr>
+            <td>Clifford Dibble</td>
+            <td>Kent U1500</td>
+            <td data-sort="866">866</td>
+            <td data-sort="0">-</td>
+            <td>32490250</td>
+            <td>ADUN0</td>
+        </tr>
+        <tr>
+            <td>Vidip Kona</td>
+            <td>Kenmore Open</td>
+            <td data-sort="2233">2233</td>
+            <td data-sort="2243">2243</td>
+            <td>16948874</td>
+            <td>TIMHI26J</td>
+        </tr>
+        <tr>
+            <td>Sambuddha Sekhar Das</td>
+            <td>Kenmore Open</td>
+            <td data-sort="1369">1369</td>
+            <td data-sort="1516">1516</td>
+            <td>31012174</td>
+            <td>ENDFK47S</td>
+        </tr>
+        <tr>
+            <td>Harvey Wang</td>
+            <td>Kent U1500</td>
+            <td data-sort="1253">1253</td>
+            <td data-sort="1439">1439</td>
+            <td>31139736</td>
+            <td>OPWDJ68G</td>
+        </tr>
+        <tr>
+            <td>Ujwal Garine</td>
+            <td>Kenmore Open</td>
+            <td data-sort="1873">1873</td>
+            <td data-sort="1956">1956</td>
+            <td>17094456</td>
+            <td>TSTMB99A</td>
+        </tr>
+        <tr>
+            <td>Allen Chang</td>
+            <td>Kenmore Open</td>
+            <td data-sort="1489">1489</td>
+            <td data-sort="1535">1535</td>
+            <td>13212478</td>
+            <td>ADUNK02T</td>
+        </tr>
+        <tr>
+            <td>Raymond Zhao</td>
+            <td>Kenmore Open</td>
+            <td data-sort="1466">1466</td>
+            <td data-sort="1513">1513</td>
+            <td>31956702</td>
+            <td>XXOEW75T</td>
+        </tr>
+        <tr>
+            <td>Merrick Liu</td>
+            <td>Kenmore Open</td>
+            <td data-sort="1520">1520</td>
+            <td data-sort="1528">1528</td>
+            <td>31956683</td>
+            <td>XXOHW75U</td>
+        </tr>
+        <tr>
+            <td>Stephen Willy</td>
+            <td>Kenmore Open</td>
+            <td data-sort="2301">2301</td>
+            <td data-sort="2306">2306</td>
+            <td>17088783</td>
+            <td>HSCKH17K</td>
+        </tr>
+        <tr>
+            <td>Terrick Evin</td>
+            <td>Kenmore Open</td>
+            <td data-sort="1462">1462</td>
+            <td data-sort="1529">1529</td>
+            <td>30653668</td>
+            <td>EBSEC54L</td>
+        </tr>
+        <tr>
+            <td>Emma Ge</td>
+            <td>Kent U1500</td>
+            <td data-sort="1228">1228</td>
+            <td data-sort="1223">1223</td>
+            <td>31624335</td>
+            <td>SSMDJ56J</td>
+        </tr>
+        <tr>
+            <td>Vishnu Mohan</td>
+            <td>Kenmore Open</td>
+            <td data-sort="1750">1750</td>
+            <td data-sort="1766">1766</td>
+            <td>30282371</td>
+            <td>SKIHF41R</td>
+        </tr>
+        <tr>
+            <td>Riaan Babbar</td>
+            <td>Kenmore Open</td>
+            <td data-sort="1498">1498</td>
+            <td data-sort="1552">1552</td>
+            <td>30660663</td>
+            <td>ENDFJ98D</td>
+        </tr>
+        <tr>
+            <td>Richard Rogov</td>
+            <td>Kent U1500</td>
+            <td data-sort="1166">1166</td>
+            <td data-sort="1202">1202</td>
+            <td>31815866</td>
+            <td>MEDEJ68U</td>
+        </tr>
+        <tr>
+            <td>Jeffrey Wei</td>
+            <td>Kenmore Open</td>
+            <td data-sort="1958">1958</td>
+            <td data-sort="1943">1943</td>
+            <td>30603651</td>
+            <td>ICSGH64M</td>
+        </tr>
+        <tr>
+            <td>Akim Pikh</td>
+            <td>Kenmore Open</td>
+            <td data-sort="1975">1975</td>
+            <td data-sort="1981">1981</td>
+            <td>31962377</td>
+            <td>BLWGH64N</td>
+        </tr>
+        <tr>
+            <td>Loida Guo</td>
+            <td>Kenmore Open</td>
+            <td data-sort="1509">1509</td>
+            <td data-sort="1541">1541</td>
+            <td>30392341</td>
+            <td>XXXDG25U</td>
+        </tr>
+        <tr>
+            <td>David Newland</td>
+            <td>Kent U1500</td>
+            <td data-sort="259">259</td>
+            <td data-sort="0">-</td>
+            <td>32165418</td>
+            <td>ADUN0</td>
+        </tr>
+        <tr>
+            <td>Michael Lin</td>
+            <td>Kenmore Open</td>
+            <td data-sort="1924">1924</td>
+            <td data-sort="1945">1945</td>
+            <td>17281737</td>
+            <td>BASGC97F</td>
+        </tr>
+        <tr>
+            <td>Skyler Qin</td>
+            <td>Kent U1500</td>
+            <td data-sort="1237">1237</td>
+            <td data-sort="1380">1380</td>
+            <td>31466883</td>
+            <td>OPWCJ97T</td>
+        </tr>
+        <tr>
+            <td>Eevie Tare</td>
+            <td>Withdrew</td>
+            <td data-sort="1231">1231</td>
+            <td data-sort="1444">1444</td>
+            <td>31610593</td>
+            <td>SLLGW80B</td>
+        </tr>
+        <tr>
+            <td>George Kochumuriyil Joseph</td>
+            <td>Withdrew</td>
+            <td data-sort="0">-</td>
+            <td data-sort="933">933</td>
+            <td>-</td>
+            <td>CDIEH11C</td>
+        </tr>
+        <tr>
+            <td>Darsh Verma</td>
+            <td>Kenmore Open</td>
+            <td data-sort="1818">1818</td>
+            <td data-sort="1927">1927</td>
+            <td>16885668</td>
+            <td>WONJB52K</td>
+        </tr>
+        <tr>
+            <td>Rhadean Rubaiyat</td>
+            <td>Kenmore Open</td>
+            <td data-sort="1670">1670</td>
+            <td data-sort="1699">1699</td>
+            <td>30015512</td>
+            <td>REDKD40L</td>
+        </tr>
+        <tr>
+            <td>Chad Boey</td>
+            <td>Kenmore Open</td>
+            <td data-sort="1801">1801</td>
+            <td data-sort="1794">1794</td>
+            <td>17072388</td>
+            <td>ADUN800V</td>
+        </tr>
+        <tr>
+            <td>Aarav Bharathy Mohan</td>
+            <td>Kenmore Open</td>
+            <td data-sort="1766">1766</td>
+            <td data-sort="1859">1859</td>
+            <td>30125099</td>
+            <td>SKIHC98B</td>
+        </tr>
+        <tr>
+            <td>Aryash Singhal</td>
+            <td>Withdrew</td>
+            <td data-sort="807">807</td>
+            <td data-sort="1016">1016</td>
+            <td>30543309</td>
+            <td>XXXG595L</td>
+        </tr>
+        <tr>
+            <td>Ananth Gottumukkala</td>
+            <td>Kenmore Open</td>
+            <td data-sort="2156">2156</td>
+            <td data-sort="2156">2156</td>
+            <td>14090705</td>
+            <td>ADUNG432</td>
+        </tr>
+        <tr>
+            <td>Bohan Li</td>
+            <td>Kenmore Open</td>
+            <td data-sort="1506">1506</td>
+            <td data-sort="1450">1450</td>
+            <td>30458814</td>
+            <td>BNYFW86W</td>
+        </tr>
+        <tr>
+            <td>Nikash Vemparala</td>
+            <td>Kenmore Open</td>
+            <td data-sort="2231">2231</td>
+            <td data-sort="2245">2245</td>
+            <td>16438800</td>
+            <td>OVLKI078</td>
+        </tr>
+        <tr>
+            <td>Bright Weng</td>
+            <td>Kent U1500</td>
+            <td data-sort="1289">1289</td>
+            <td data-sort="1461">1461</td>
+            <td>30694373</td>
+            <td>BENF850P</td>
+        </tr>
+        <tr>
+            <td>Don Hack</td>
+            <td>Kent U1500</td>
+            <td data-sort="1281">1281</td>
+            <td data-sort="1410">1410</td>
+            <td>16687214</td>
+            <td>ADBNF13X</td>
+        </tr>
+        <tr>
+            <td>Christopher Gilbert</td>
+            <td>Kenmore Open</td>
+            <td data-sort="1558">1558</td>
+            <td data-sort="1577">1577</td>
+            <td>17281957</td>
+            <td>ADUN2539</td>
+        </tr>
+        <tr>
+            <td>Matthew Mckendry</td>
+            <td>Kent U1500</td>
+            <td data-sort="1094">1094</td>
+            <td data-sort="1124">1124</td>
+            <td>14234663</td>
+            <td>ADUNF245</td>
+        </tr>
+        <tr>
+            <td>Selina Cheng</td>
+            <td>Kenmore Open</td>
+            <td data-sort="1640">1640</td>
+            <td data-sort="1698">1698</td>
+            <td>17236746</td>
+            <td>TLMI413R</td>
+        </tr>
+        <tr>
+            <td>Albert Eksarevskiy</td>
+            <td>Kenmore Open</td>
+            <td data-sort="1939">1939</td>
+            <td data-sort="1939">1939</td>
+            <td>30337466</td>
+            <td>LSSL530Y</td>
+        </tr>
+        <tr>
+            <td>Krishang Gupta</td>
+            <td>Kenmore Open</td>
+            <td data-sort="1419">1419</td>
+            <td data-sort="1583">1583</td>
+            <td>16919966</td>
+            <td>GTMIE37V</td>
+        </tr>
+        <tr>
+            <td>Roger Hanson</td>
+            <td>Kenmore Open</td>
+            <td data-sort="1887">1887</td>
+            <td data-sort="1851">1851</td>
+            <td>10513880</td>
+            <td>ADUNJ69X</td>
+        </tr>
+        <tr>
+            <td>Brian Mack</td>
+            <td>Kenmore Open</td>
+            <td data-sort="1342">1342</td>
+            <td data-sort="0">-</td>
+            <td>13422313</td>
+            <td>ADON0</td>
+        </tr>
+        <tr>
+            <td>Megan Lee</td>
+            <td>Kenmore Open</td>
+            <td data-sort="2264">2264</td>
+            <td data-sort="2319">2319</td>
+            <td>12902833</td>
+            <td>ADUN8702</td>
+        </tr>
+        <tr>
+            <td>Yuan Jiang</td>
+            <td>Kenmore Open</td>
+            <td data-sort="1498">1498</td>
+            <td data-sort="1941">1941</td>
+            <td>12622358</td>
+            <td>ADUN8268</td>
+        </tr>
+        <tr>
+            <td>Rishabh Chinni</td>
+            <td>Kenmore Open</td>
+            <td data-sort="2177">2177</td>
+            <td data-sort="2196">2196</td>
+            <td>16399826</td>
+            <td>FRWI241C</td>
+        </tr>
+        <tr>
+            <td>Vijay Nallappa</td>
+            <td>Kenmore Open</td>
+            <td data-sort="1802">1802</td>
+            <td data-sort="1893">1893</td>
+            <td>17221696</td>
+            <td>REDKD40S</td>
+        </tr>
+        <tr>
+            <td>Dheeran Koripella</td>
+            <td>Kenmore Open</td>
+            <td data-sort="1416">1416</td>
+            <td data-sort="1561">1561</td>
+            <td>30534714</td>
+            <td>INGI610W</td>
+        </tr>
+        <tr>
+            <td>Krishang Benita-Nagdeep</td>
+            <td>Kent U1500</td>
+            <td data-sort="557">557</td>
+            <td data-sort="879">879</td>
+            <td>30783300</td>
+            <td>SOMEK56N</td>
+        </tr>
+        <tr>
+            <td>Jonathan Wu</td>
+            <td>Kent U1500</td>
+            <td data-sort="1004">1004</td>
+            <td data-sort="1117">1117</td>
+            <td>30873040</td>
+            <td>UCDEK14H</td>
+        </tr>
+        <tr>
+            <td>Matvei Ivanov</td>
+            <td>Kent U1500</td>
+            <td data-sort="759">759</td>
+            <td data-sort="1166">1166</td>
+            <td>31574019</td>
+            <td>EABEK34E</td>
+        </tr>
+        <tr>
+            <td>Darren Stahl</td>
+            <td>Kenmore Open</td>
+            <td data-sort="1321">1321</td>
+            <td data-sort="1433">1433</td>
+            <td>32128113</td>
+            <td>ADUNH44N</td>
+        </tr>
+        <tr>
+            <td>Alberto Rosales Infante</td>
+            <td>Kenmore Open</td>
+            <td data-sort="1734">1734</td>
+            <td data-sort="1926">1926</td>
+            <td>31996535</td>
+            <td>ADUNH35J</td>
+        </tr>
+        <tr>
+            <td>Aariv Shah</td>
+            <td>Kent U1500</td>
+            <td data-sort="739">739</td>
+            <td data-sort="948">948</td>
+            <td>32214646</td>
+            <td>PFCI527D</td>
+        </tr>
+        <tr>
+            <td>Samik Kulkarni</td>
+            <td>Kent U1500</td>
+            <td data-sort="1014">1014</td>
+            <td data-sort="1249">1249</td>
+            <td>32250708</td>
+            <td>KKNCH67M</td>
+        </tr>
+        <tr>
+            <td>Andrew Wiese</td>
+            <td>Kent U1500</td>
+            <td data-sort="0">-</td>
+            <td data-sort="0">-</td>
+            <td>32158091</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td>Paul Harwood</td>
+            <td>Kenmore Open</td>
+            <td data-sort="1871">1871</td>
+            <td data-sort="1871">1871</td>
+            <td>12487048</td>
+            <td>ADUN2188</td>
+        </tr>
+        <tr>
+            <td>Rian Raja</td>
+            <td>Waitlist</td>
+            <td data-sort="1576">1576</td>
+            <td data-sort="1616">1616</td>
+            <td>30021343</td>
+            <td>SKWI786E</td>
+        </tr>
+        <tr>
+            <td>William Summerfield</td>
+            <td>Kenmore Open</td>
+            <td data-sort="1917">1917</td>
+            <td data-sort="1988">1988</td>
+            <td>30296313</td>
+            <td>MCRJG77R</td>
+        </tr>
+        <tr>
+            <td>Rishabhdeva Patnaik</td>
+            <td>Kent U1500</td>
+            <td data-sort="1145">1145</td>
+            <td data-sort="1345">1345</td>
+            <td>30296248</td>
+            <td>PLKGG72D</td>
+        </tr>
+        <tr>
+            <td>Shanna Wu</td>
+            <td>Kenmore Open</td>
+            <td data-sort="1513">1513</td>
+            <td data-sort="1645">1645</td>
+            <td>31416581</td>
+            <td>CNHFJ72M</td>
+        </tr>
+        <tr>
+            <td>Harry Wu</td>
+            <td>Kenmore Open</td>
+            <td data-sort="1504">1504</td>
+            <td data-sort="1553">1553</td>
+            <td>30684782</td>
+            <td>SASHJ72P</td>
+        </tr>
+        <tr>
+            <td>Shawn Li</td>
+            <td>Kenmore Open</td>
+            <td data-sort="1858">1858</td>
+            <td data-sort="1881">1881</td>
+            <td>31907445</td>
+            <td>SOMDJ11N</td>
+        </tr>
+        <tr>
+            <td>Isaiah Fontenot</td>
+            <td>Kent U1500</td>
+            <td data-sort="1077">1077</td>
+            <td data-sort="1221">1221</td>
+            <td>32438139</td>
+            <td>ADUNG30P</td>
+        </tr>
+        <tr>
+            <td>Jimmy Yang</td>
+            <td>Kenmore Open</td>
+            <td data-sort="1525">1525</td>
+            <td data-sort="1550">1550</td>
+            <td>30021198</td>
+            <td>BASGG45S</td>
+        </tr>
+        <tr>
+            <td>Ziliang Ma</td>
+            <td>Kent U1500</td>
+            <td data-sort="1227">1227</td>
+            <td data-sort="1310">1310</td>
+            <td>31361268</td>
+            <td>DCCIA69N</td>
+        </tr>
+        <tr>
+            <td>Siddarth Meenakshi Sundaram</td>
+            <td>Kenmore Open</td>
+            <td data-sort="2413">2413</td>
+            <td data-sort="2463">2463</td>
+            <td>17254791</td>
+            <td>ADUNK02X</td>
+        </tr>
+        <tr>
+            <td>Mikhail Lagzdin</td>
+            <td>Kent U1500</td>
+            <td data-sort="820">820</td>
+            <td data-sort="1171">1171</td>
+            <td>31575027</td>
+            <td>HMNDJ96R</td>
+        </tr>
+        <tr>
+            <td>David Smygov</td>
+            <td>Kenmore Open</td>
+            <td data-sort="1627">1627</td>
+            <td data-sort="1794">1794</td>
+            <td>30218690</td>
+            <td>ADUNG97D</td>
+        </tr>
+        <tr>
+            <td>Moses Li</td>
+            <td>Kent U1500</td>
+            <td data-sort="750">750</td>
+            <td data-sort="1301">1301</td>
+            <td>30241735</td>
+            <td>BCXEK26L</td>
+        </tr>
+        <tr>
+            <td>Neevan Reddy Saddi</td>
+            <td>Kenmore Open</td>
+            <td data-sort="1975">1975</td>
+            <td data-sort="1982">1982</td>
+            <td>30078321</td>
+            <td>GRRGH87M</td>
+        </tr>
+        <tr>
+            <td>Karthik Bimod</td>
+            <td>Kenmore Open</td>
+            <td data-sort="1939">1939</td>
+            <td data-sort="1934">1934</td>
+            <td>31093354</td>
+            <td>SLLIW89E</td>
+        </tr>
+        <tr>
+            <td>Bhavik Bharath</td>
+            <td>Kenmore Open</td>
+            <td data-sort="1526">1526</td>
+            <td data-sort="1553">1553</td>
+            <td>31882933</td>
+            <td>ADUNH71C</td>
+        </tr>
+        <tr>
+            <td>Brannon Underwood</td>
+            <td>Kent U1500</td>
+            <td data-sort="0">-</td>
+            <td data-sort="0">-</td>
+            <td>-</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td>Christian Jordan</td>
+            <td>Kent U1500</td>
+            <td data-sort="1271">1271</td>
+            <td data-sort="1447">1447</td>
+            <td>31307524</td>
+            <td>ADUN5057</td>
+        </tr>
+        <tr>
+            <td>Aiden Zhu</td>
+            <td>Kenmore Open</td>
+            <td data-sort="1319">1319</td>
+            <td data-sort="1431">1431</td>
+            <td>30141156</td>
+            <td>LMSFC77X</td>
+        </tr>
+        <tr>
+            <td>Arnav Gadde</td>
+            <td>Kenmore Open</td>
+            <td data-sort="1653">1653</td>
+            <td data-sort="1751">1751</td>
+            <td>30016341</td>
+            <td>GTMGJ39D</td>
+        </tr>
+        <tr>
+            <td>Bhuvana Vuta</td>
+            <td>Kent U1500</td>
+            <td data-sort="746">746</td>
+            <td data-sort="938">938</td>
+            <td>31955710</td>
+            <td>SKIGH63D</td>
+        </tr>
+        <tr>
+            <td>Vihaan Pai</td>
+            <td>Kenmore Open</td>
+            <td data-sort="1588">1588</td>
+            <td data-sort="1615">1615</td>
+            <td>30296238</td>
+            <td>CHAGK17C</td>
+        </tr>
+        <tr>
+            <td>Kshitij Narkhede</td>
+            <td>Kent U1500</td>
+            <td data-sort="1354">1354</td>
+            <td data-sort="1418">1418</td>
+            <td>30614389</td>
+            <td>CRKEA27K</td>
+        </tr>
+        <tr>
+            <td>Felicity Mei</td>
+            <td>Kent U1500</td>
+            <td data-sort="859">859</td>
+            <td data-sort="982">982</td>
+            <td>30740566</td>
+            <td>MMEDK89R</td>
+        </tr>
+        <tr>
+            <td>Dmitriy Bondar</td>
+            <td>Kent U1500</td>
+            <td data-sort="1197">1197</td>
+            <td data-sort="1371">1371</td>
+            <td>32173940</td>
+            <td>REDJI117</td>
+        </tr>
+        <tr>
+            <td>Kyle Jiang</td>
+            <td>Kent U1500</td>
+            <td data-sort="1161">1161</td>
+            <td data-sort="1356">1356</td>
+            <td>31368749</td>
+            <td>MEDDK35B</td>
+        </tr>
+        <tr>
+            <td>Alex Chow</td>
+            <td>Waitlist</td>
+            <td data-sort="1803">1803</td>
+            <td data-sort="1818">1818</td>
+            <td>12910167</td>
+            <td>ADUN7419</td>
+        </tr>
+        <tr>
+            <td>Clora Huang</td>
+            <td>Waitlist</td>
+            <td data-sort="1223">1223</td>
+            <td data-sort="1240">1240</td>
+            <td>31289581</td>
+            <td>SOMFK31H</td>
+        </tr>
+        <tr>
+            <td>Ziqian Gao</td>
+            <td>Kenmore Open</td>
+            <td data-sort="1773">1773</td>
+            <td data-sort="1786">1786</td>
+            <td>30740596</td>
+            <td>BLWGK10U</td>
+        </tr>
+        <tr>
+            <td>Kaiyi Han</td>
+            <td>Kent U1500</td>
+            <td data-sort="930">930</td>
+            <td data-sort="1187">1187</td>
+            <td>31731694</td>
+            <td>SOMCK42P</td>
+        </tr>
+        <tr>
+            <td>Pratik Thorwe</td>
+            <td>Waitlist</td>
+            <td data-sort="1972">1972</td>
+            <td data-sort="1955">1955</td>
+            <td>31158547</td>
+            <td>ADUNK10D</td>
+        </tr>
+        <tr>
+            <td>Vasishta Narayan Komara</td>
+            <td>Waitlist</td>
+            <td data-sort="640">640</td>
+            <td data-sort="843">843</td>
+            <td>31946142</td>
+            <td>FRWFG75F</td>
+        </tr>
+        <tr>
+            <td>Daniel Hyman</td>
+            <td>Waitlist</td>
+            <td data-sort="1264">1264</td>
+            <td data-sort="0">-</td>
+            <td>32224657</td>
+            <td>ADUN0</td>
+        </tr>
+        <tr>
+            <td>Vihaan Jammalamadaka</td>
+            <td>Waitlist</td>
+            <td data-sort="2164">2164</td>
+            <td data-sort="2164">2164</td>
+            <td>16624387</td>
+            <td>WPPIJ90F</td>
+        </tr>
+        <tr>
+            <td>Yiting Gui</td>
+            <td>Waitlist</td>
+            <td data-sort="0">-</td>
+            <td data-sort="0">-</td>
+            <td>-</td>
+            <td>-</td>
+        </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <script>
+        // Set current timestamp
+        document.getElementById('timestamp').textContent = new Date().toLocaleString();
+
+        let sortDirection = {};
+
+        function sortTable(columnIndex) {
+            const table = document.getElementById('rosterTable');
+            const tbody = table.querySelector('tbody');
+            const rows = Array.from(tbody.querySelectorAll('tr'));
+            const headers = table.querySelectorAll('th');
+
+            // Clear previous sort indicators
+            headers.forEach(h => h.classList.remove('sorted-asc', 'sorted-desc'));
+
+            // Determine sort direction
+            const currentDirection = sortDirection[columnIndex] || 'asc';
+            const newDirection = currentDirection === 'asc' ? 'desc' : 'asc';
+            sortDirection[columnIndex] = newDirection;
+
+            // Add sort indicator
+            headers[columnIndex].classList.add(`sorted-${newDirection}`);
+
+            // Sort rows
+            rows.sort((a, b) => {
+                let aVal = a.cells[columnIndex].textContent.trim();
+                let bVal = b.cells[columnIndex].textContent.trim();
+
+                // Handle numeric columns (ratings)
+                if (columnIndex === 2 || columnIndex === 3) {
+                    const aSort = a.cells[columnIndex].getAttribute('data-sort');
+                    const bSort = b.cells[columnIndex].getAttribute('data-sort');
+                    aVal = parseInt(aSort) || 0;
+                    bVal = parseInt(bSort) || 0;
+                } else {
+                    // Handle text columns
+                    aVal = aVal.toLowerCase();
+                    bVal = bVal.toLowerCase();
+                }
+
+                let comparison = 0;
+                if (aVal > bVal) comparison = 1;
+                if (aVal < bVal) comparison = -1;
+
+                return newDirection === 'desc' ? -comparison : comparison;
+            });
+
+            // Re-append sorted rows
+            rows.forEach(row => tbody.appendChild(row));
+        }
+
+        // Default sort by player name
+        sortTable(0);
+    </script>
+</body>
+</html>

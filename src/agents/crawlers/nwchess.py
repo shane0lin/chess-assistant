@@ -26,6 +26,8 @@ class RosterEntry:
     session_name: str
     uscf_id: Optional[str]
     uscf_rating: Optional[int]
+    nwsrs_id: Optional[str]
+    nwsrs_rating: Optional[int]
     source_tournament_id: str
 
 
@@ -111,6 +113,8 @@ def _parse_entries(
         last_name = cells[1]
         first_name = cells[2]
         player_name = _compose_player_name(first_name, last_name)
+        nwsrs_rating = _parse_int(cells[5])
+        nwsrs_id = cells[6] or None
         uscf_rating = _parse_int(cells[7])
         uscf_id = cells[8] or None
 
@@ -125,6 +129,8 @@ def _parse_entries(
             session_name=session_name,
             uscf_id=uscf_id,
             uscf_rating=uscf_rating,
+            nwsrs_id=nwsrs_id,
+            nwsrs_rating=nwsrs_rating,
             source_tournament_id=source_tournament_id,
         )
 
@@ -158,15 +164,19 @@ def _persist_entries(connection, entries: Iterable[RosterEntry]) -> None:
                     session_name,
                     uscf_id,
                     uscf_rating,
+                    nwsrs_id,
+                    nwsrs_rating,
                     created_at,
                     updated_at
-                ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+                ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
                 ON CONFLICT(universal_tournament_id, universal_player_id)
                 DO UPDATE SET
                     player_name=excluded.player_name,
                     session_name=excluded.session_name,
                     uscf_id=excluded.uscf_id,
                     uscf_rating=excluded.uscf_rating,
+                    nwsrs_id=excluded.nwsrs_id,
+                    nwsrs_rating=excluded.nwsrs_rating,
                     source=excluded.source,
                     source_tournament_id=excluded.source_tournament_id,
                     updated_at=excluded.updated_at
@@ -180,6 +190,8 @@ def _persist_entries(connection, entries: Iterable[RosterEntry]) -> None:
                     entry.session_name,
                     entry.uscf_id,
                     entry.uscf_rating,
+                    entry.nwsrs_id,
+                    entry.nwsrs_rating,
                     now,
                     now,
                 ),

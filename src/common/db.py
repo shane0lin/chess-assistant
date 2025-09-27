@@ -20,7 +20,7 @@ def get_connection(db_path: Optional[Path | str] = None) -> sqlite3.Connection:
 
 
 def initialize_schema(connection: sqlite3.Connection) -> None:
-    """Ensure the core tables exist."""
+    """Ensure the core tables exist and migrate existing schemas."""
     connection.execute(
         """
         CREATE TABLE IF NOT EXISTS tournament_players (
@@ -32,12 +32,17 @@ def initialize_schema(connection: sqlite3.Connection) -> None:
             session_name TEXT NOT NULL,
             uscf_id TEXT,
             uscf_rating INTEGER,
+            nwsrs_id TEXT,
+            nwsrs_rating INTEGER,
             created_at TEXT NOT NULL,
             updated_at TEXT NOT NULL,
             PRIMARY KEY (universal_tournament_id, universal_player_id)
         )
         """
     )
+
+    # Migrate existing tables to add NWSRS columns if missing
+    _migrate_tournament_players_table(connection)
     connection.commit()
 
 
@@ -46,3 +51,17 @@ def ensure_database(db_path: Optional[Path | str] = None) -> sqlite3.Connection:
     connection = get_connection(db_path=db_path)
     initialize_schema(connection)
     return connection
+
+
+def _migrate_tournament_players_table(connection: sqlite3.Connection) -> None:
+    """Add NWSRS columns to existing tournament_players table if missing."""
+    # Check if nwsrs_id column exists
+    cursor = connection.cursor()
+    cursor.execute("PRAGMA table_info(tournament_players)")
+    columns = [row[1] for row in cursor.fetchall()]
+
+    if "nwsrs_id" not in columns:
+        connection.execute("ALTER TABLE tournament_players ADD COLUMN nwsrs_id TEXT")
+
+    if "nwsrs_rating" not in columns:
+        connection.execute("ALTER TABLE tournament_players ADD COLUMN nwsrs_rating INTEGER")
